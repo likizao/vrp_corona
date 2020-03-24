@@ -30,3 +30,4 @@ O item `mascaracorona` impedirá as pessoas de serem contaminadas.
 
 * Caso queiram adicionar em alguma outra resource uma forma de curar a doença, há um evento server-side chamado `vrp_corona:Curar`.
 
+#### https://discord.gg/QcD67Pt
