@@ -1,9 +1,10 @@
 # vrp_corona
 #### Sistema simples de Corona Vírus.
 Não tem muito oque falar, é um sistema simples e feito rapidamente numa madrugada aleatória de quarentena.
-1. A mascará 101 protege a pessoa de se contaminar com o vírus.
+1. A mascará `101` protege a pessoa de se contaminar com o vírus.
 2. A pessoa contaminada, fica vomitando e tossindo.
 3. Comando `/curar` pro paramédico curar a pessoa. Não tive nenhuma idéia legal de animação pra colocar, então, ele tá totalmente sem sentido, mas creio que esteja funcional.
+4. Tá feito pra vRPex, mas pode ser facilmente convertido.
 
 # Dicas de Instalação:
 A resource é literalmente, baixar e startar, porém, caso queiram:
