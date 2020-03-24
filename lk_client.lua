@@ -21,6 +21,10 @@ function vRPc.haveMask()
     return (GetPedDrawableVariation(PlayerPedId(), 1) == 101)
 end
 
+function vRPc.setMask()
+    	SetPedComponentVariation(PlayerPedId(),1,101,1,2)    
+end
+
 Citizen.CreateThread(function()
     while true do
         Wait(1)
