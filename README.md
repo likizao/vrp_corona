@@ -5,7 +5,7 @@ Não tem muito oque falar, é um sistema simples e feito rapidamente numa madrug
 2. A pessoa contaminada, fica vomitando e tossindo.
 3. Comando `/curar` pro paramédico curar a pessoa. Não tive nenhuma idéia legal de animação pra colocar, então, ele tá totalmente sem sentido, mas creio que esteja funcional.
 4. Tá feito pra vRPex, mas pode ser facilmente convertido.
-
+5. Comando `/setcorona [id]` pra setar o paciente zero, quem executar o comando precisa ter a permissão `admin.permissao`. 
 # Dicas de Instalação:
 A resource é literalmente, baixar e startar, porém, caso queiram:
 
