@@ -1,3 +1,10 @@
+
+--[[=======================================================================]]--
+--[[  Discord: Likizão#4542                                                ]]--
+--[[  Youtube: https://www.youtube.com/channel/UCLNWFQ-j0KQidRXUqXAvYXg    ]]--
+--[[=======================================================================]]--
+
+
 local Tunnel = module("vrp","lib/Tunnel")
 local Proxy = module("vrp","lib/Proxy")
 vRP = Proxy.getInterface("vRP")
@@ -41,7 +48,6 @@ end)
 ----[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
 ----[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
 -----------------------------------------=------------------------------------
--- remover doença
 RegisterServerEvent("vrp_corona:Curar")
 AddEventHandler('vrp_corona:Curar', function()
 local user_id = vRP.getUserId(source)
@@ -53,10 +59,16 @@ local contaminado = json.decode(value) or ""
     end
 end)
 
------------------------------------------=------------------------------------
-----[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
-----[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
------------------------------------------=------------------------------------
+AddEventHandler('resetDiagnostic', function()
+local user_id = vRP.getUserId(source)
+local value = vRP.getUData(user_id,"vRP:doenca")
+local contaminado = json.decode(value) or ""
+    if contaminado == "Corona" then 
+        vRP.setUData(user_id,"vRP:doenca",json.encode(""))
+        Lclient.setDoente(source, false)
+    end
+end)
+
 RegisterCommand("curar", function(source)
 local user_id = vRP.getUserId(source)
     if vRP.hasPermission(user_id,"polpar.permissao") then  
@@ -74,3 +86,6 @@ local user_id = vRP.getUserId(source)
         TriggerClientEvent("Notify", source, "aviso", "Você não é um paramédico!")
     end
 end)
+
+
+

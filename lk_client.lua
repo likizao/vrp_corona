@@ -102,3 +102,9 @@ function vomitar()
     ClearPedTasks(ped)
     RemoveNamedPtfxAsset("scr_family5")
 end
+
+
+RegisterNetEvent('setMask')
+AddEventHandler('setMask',function()
+	SetPedComponentVariation(PlayerPedId(),1,101,1,2)    
+end)
