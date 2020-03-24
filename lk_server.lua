@@ -88,4 +88,14 @@ local user_id = vRP.getUserId(source)
 end)
 
 
-
+RegisterCommand("setcorona", function(source, args)
+local nuser_id = parseInt(args[1])
+local user_id = vRP.getUserId(source)
+if vRP.hasPermission(user_id,"admin.permissao") then
+  if nuser_id then
+    local nplayer = vRP.getUserSource(nuser_id)
+    Lclient.setDoente(nplayer, true)
+    vRP.setUData(nuser_id,"vRP:doenca",json.encode("Corona"))
+  end
+end
+end)
