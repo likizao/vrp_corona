@@ -1,6 +1,6 @@
 
 --[[=======================================================================]]--
---[[  Discord: Likizão#4542                                                ]]--
+--[[  Discord: Likizão#4542    https://discord.gg/QcD67Pt                  ]]--
 --[[  Youtube: https://www.youtube.com/channel/UCLNWFQ-j0KQidRXUqXAvYXg    ]]--
 --[[=======================================================================]]--
 
