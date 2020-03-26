@@ -9,7 +9,7 @@ Não tem muito oque falar, é um sistema simples e feito rapidamente numa madrug
 # Dicas de Instalação:
 A resource é literalmente, baixar e startar, porém, caso queiram:
 
-* Eu sugiro, adicionar o item `mascaracorona`, como a grande maioria não usa mais o menu da vRP, não tenho a mínima idéia do sistema de inventário que vocês usam, então, criem o item `mascaracorona` e igual aos outros itens, ao usar, execute algo semelhante a isso:
+* Eu sugiro, adicionar o item `mascaracorona`, como a grande maioria não usa mais o menu da vRP, não tenho a mínima idéia do sistema de inventário que vocês usam, então, criem o item `mascaracorona` e igual aos outros itens, ao usar, execute algo semelhante a isso: 
 ```
 local user_id = vRP.getUserId(player)
 if user_id then
