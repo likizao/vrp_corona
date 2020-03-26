@@ -28,7 +28,7 @@ end
 Citizen.CreateThread(function()
     while true do
         Wait(1)
-        ped = PlayerPedId()
+        local ped = PlayerPedId()
         if contaminado then
             if GetEntityHealth(ped) > 101 then
                 SetRunSprintMultiplierForPlayer(ped, 0.0)
