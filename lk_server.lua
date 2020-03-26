@@ -35,6 +35,7 @@ end)
 
 AddEventHandler("vRP:playerSpawn",function(user_id,source,first_spawn)
     if first_spawn then 
+
         local value = vRP.getUData(user_id,"vRP:doenca")
         local contaminado = json.decode(value) or ""
             if contaminado == "Corona" then
