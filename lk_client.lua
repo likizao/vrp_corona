@@ -80,10 +80,24 @@ end)
 
 Citizen.CreateThread(function()
     while true do
-        Wait(0)
+        Wait(5)
         if contaminado then
             Citizen.Wait(800)
             TriggerServerEvent("vrp_corona:transmissao")
+        end
+    end
+end)
+
+Citizen.CreateThread(function()
+    while true do
+        Wait(100)
+        if contaminado then
+            local ped = PlayerPedId()
+            local health = GetEntityHealth(ped)
+            if health > 120 then 
+            SetEntityHealth(ped, (health - 1))
+            Citizen.Wait(15000)
+            end
         end
     end
 end)
