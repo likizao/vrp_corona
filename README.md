@@ -1,5 +1,5 @@
 # vrp_corona
-#### Sistema simples de Corona Vírus.
+#### Sistema de Corona Vírus.
 Não tem muito oque falar, é um sistema simples e feito rapidamente numa madrugada aleatória de quarentena.
 1. A mascará `101` protege a pessoa de se contaminar com o vírus.
 2. A pessoa contaminada, fica vomitando e tossindo.
